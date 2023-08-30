@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import EventsFunctional from './components/EventsFunctional';
-import EventsClass from './components/EventsClass';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunction from './components/ConditionalRenderingFunction';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <EventsFunctional />
-        <EventsClass />
+        <ConditionalRenderingClass />
+        <ConditionalRenderingFunction connected={true}/>
       </div>
     );
   }
