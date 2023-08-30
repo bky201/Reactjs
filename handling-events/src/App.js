@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import ConditionalRenderingClass from './components/ConditionalRenderingClass';
-import ConditionalRenderingFunction from './components/ConditionalRenderingFunction';
+import NestingComponents from './components/NestingComponents';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ConditionalRenderingClass />
-        <ConditionalRenderingFunction connected={true}/>
+        <NestingComponents />
       </div>
     );
   }
