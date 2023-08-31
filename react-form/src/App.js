@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import ControlledForm from './components/ControlledForm';
+import UncontrolledForm from './components/UncontrolledForm';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ControlledForm />
+        <UncontrolledForm />
       </div>
     );
   }
