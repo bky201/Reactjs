@@ -28,24 +28,26 @@ function RenderingLists() {
   return (
     <div>
         {bookList.map(book => {
-            return <h2>{ book }</h2>
+            return <h2 key={book}>{book}</h2>
         })}
         <hr />
         {
             
-                books.map(book => {
+                books.map((book, index) => {
+                    const uniqueKey = `${book.title}-${index}`;
                     return (
-                <div>
-                    <h5>{ book.title }</h5>
-                    <p>{ book.author }</p>
-                    <p>{ book.pages }</p>
+                <div key={uniqueKey}>
+                    <h5>{book.title}</h5>
+                    <p>{book.author}</p>
+                    <p>{book.pages}</p>
                 </div>
                     )
         })}
         <hr />
         {
-            books.map( book => {
-                return <Book book={ book }/>
+            books.map((book, index) => {
+                const uniqueKey = `${book.title}-${index}`;
+                return <Book key={uniqueKey} book={book}/>
             })
         }
     </div>
