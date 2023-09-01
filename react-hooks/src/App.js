@@ -5,8 +5,8 @@ import './App.css';
 // import UseStateWithObjects from './components/UseStateWithObjects';
 // import ClassCounter from './components/ClassCounter';
 // import UseEffectCounter from './components/UseEffectCounter';
-import UseEffectCounterOnlyOnce from './components/UseEffectCounterOnlyOnce';
-
+// import UseEffectCounterOnlyOnce from './components/UseEffectCounterOnlyOnce';
+import UseEffectCounterContainer from './components/UseEffectCounterContainer';
 class App extends Component {
   render() {
     return (
@@ -16,7 +16,8 @@ class App extends Component {
         {/* <UseStateWithObjects /> */}
         {/* <ClassCounter /> */}
         {/* <UseEffectCounter /> */}
-        <UseEffectCounterOnlyOnce />
+        {/* <UseEffectCounterOnlyOnce /> */}
+        <UseEffectCounterContainer />
       </div>
     );
   }
