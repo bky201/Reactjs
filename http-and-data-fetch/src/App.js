@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 // import HTTPRequests from './components/HTTPRequests';
 // import HTTPPost from './components/HTTPPost';
-import HTTPHooks from './components/HTTPHooks';
+// import HTTPHooks from './components/HTTPHooks';
+import HTTPPostHooks from './components/HTTPPostHooks';
 
 class App extends Component {
   render() {
@@ -10,7 +11,8 @@ class App extends Component {
       <div className="App">
         {/* <HTTPRequests /> */}
         {/* <HTTPPost /> */}
-        <HTTPHooks />
+        {/* <HTTPHooks /> */}
+        <HTTPPostHooks />
       </div>
     );
   }
