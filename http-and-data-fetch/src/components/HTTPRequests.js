@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 
 
-class Httprequests extends Component {
+class HTTPRequests extends Component {
     constructor(props) {
         super(props)
     
@@ -54,4 +54,4 @@ class Httprequests extends Component {
     }
 }
 
-export default Httprequests;
+export default HTTPRequests;
